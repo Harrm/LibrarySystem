@@ -7,7 +7,6 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 
 public class Main {
     public static void main(String[] args) {
-        Long currentTime = System.currentTimeMillis();
 
         ApiContextInitializer.init();
 

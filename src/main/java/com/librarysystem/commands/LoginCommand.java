@@ -15,7 +15,7 @@ public class LoginCommand implements Command {
     public SendMessage run() {
         SendMessage loginMessage = new SendMessage();
         loginMessage.setChatId(chat.getId());
-        loginMessage.setText("Enter your login details. Format is 'login username password'");
+        loginMessage.setText("Enter your username");
         return loginMessage;
     }
 
