@@ -3,7 +3,7 @@ package resources;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Book{
+public class Book {
     Book (){
 
     }

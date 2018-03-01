@@ -5,7 +5,7 @@ public class UserBuilder{
     public User build(){
 
         User user = new User();
-        user.name = name;
+        user.userName = userName;
         user.cardNumber = cardNumber;
         user.phoneNumber = phoneNumber;
         user.address = address;
@@ -13,8 +13,8 @@ public class UserBuilder{
         return user;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public void setCardNumber(long cardNumber) {
@@ -29,8 +29,25 @@ public class UserBuilder{
         this.address = address;
     }
 
-    private String name;
+    /* Here I add setters for the users:
+
+     */
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
+    public void setUserSubtype(String userSubtype) {
+        this.userSubtype = userSubtype;
+    }
+
+    private String userName;
     private long cardNumber;
     private String phoneNumber;
     private String address;
+
+    //new addition here:
+
+    protected String userType;
+    protected String userSubtype;
 }

@@ -2,8 +2,8 @@ package resources;
 
 import java.util.List;
 
-public class AVLMaterial  {
-    AVLMaterial(){
+public class AVMaterial {
+    AVMaterial(){
         
     }
 

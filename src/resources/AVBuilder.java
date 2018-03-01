@@ -2,19 +2,19 @@ package resources;
 
 import java.util.List;
 
-public class AVLBuilder {
+public class AVBuilder {
 
-    public AVLMaterial build(){
+    public AVMaterial build(){
 
-        AVLMaterial avlMaterial = new AVLMaterial();
+        AVMaterial avMaterial = new AVMaterial();
 
-        avlMaterial.title = title;
-        avlMaterial.authors = authors;
-        avlMaterial.price = price;
-        avlMaterial.keyWords = keyWords;
-        avlMaterial.numberOfCopies = numberOfCopies;
+        avMaterial.title = title;
+        avMaterial.authors = authors;
+        avMaterial.price = price;
+        avMaterial.keyWords = keyWords;
+        avMaterial.numberOfCopies = numberOfCopies;
 
-        return avlMaterial;
+        return avMaterial;
     }
 
     public void setTitle(String title) {

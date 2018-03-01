@@ -2,9 +2,8 @@ package resources;
 
 import java.util.List;
 
-public class JournalArticle extends Journal {
+public class JournalArticle  {
     JournalArticle(){
-        super();
     }
 
     public List<String> getArticleAuthors() {

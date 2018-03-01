@@ -2,7 +2,7 @@ package resources;
 
 import java.util.List;
 
-public class JournalArticleBuilder extends JournalBuilder {
+public class JournalArticleBuilder {
 
 
     public JournalArticle build(){

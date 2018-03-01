@@ -5,8 +5,8 @@ public class User {
     User() {        
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
     public long getCardNumber() {
@@ -21,14 +21,31 @@ public class User {
         return address;
     }
 
-    public static long generateCardNumber(){
-        long first = System.currentTimeMillis();
-        return first;
+    public String getUserType() {
+        return userType;
     }
 
-    protected String name;
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
+    public String getUserSubtype() {
+        return userSubtype;
+    }
+
+    public void setUserSubtype(String userSubtype) {
+        this.userSubtype = userSubtype;
+    }
+
+    protected String userName;
     protected long cardNumber;
     protected String phoneNumber;
     protected String address;
+
+    //I add the subtypes here:
+
+    protected String userType; //here we define if the user is a librarian or patron
+    protected String userSubtype; //it's whether the user is a student, a faculty or a librarian(librarian is a subclass of itself)
+
 
 }
