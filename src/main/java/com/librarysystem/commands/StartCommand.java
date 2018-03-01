@@ -1,6 +1,5 @@
 package com.librarysystem.commands;
 
-import com.librarysystem.Command;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Chat;
 import org.telegram.telegrambots.api.objects.User;

@@ -1,4 +1,4 @@
-package com.librarysystem;
+package com.librarysystem.commands;
 
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 

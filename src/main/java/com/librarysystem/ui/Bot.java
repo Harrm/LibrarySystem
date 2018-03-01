@@ -1,10 +1,9 @@
-package com.librarysystem.core;
+package com.librarysystem.ui;
 
-import com.librarysystem.Command;
+import com.librarysystem.commands.Command;
 import com.librarysystem.commands.LoginCommand;
 import com.librarysystem.commands.StartCommand;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
-import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.api.objects.User;
 import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -33,6 +32,8 @@ public class Bot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
         if (update.hasMessage() && update.getMessage().hasText()) {
+            String previous = checkLastCommandFromUser(update.getMessage().getFrom(), scanner).trim(); // previous message stored
+            //System.out.println(previous);
             String x = update.getMessage().getText();
             Command command;
             switch (x) {
@@ -62,8 +63,7 @@ public class Bot extends TelegramLongPollingBot {
                     break;
 
                 default:
-                    String previous = checkLastCommandFromUser(update.getMessage().getFrom(), scanner).trim();
-                    System.out.println(previous);
+
                     if (previous.equals("/login")) {
                         username = update.getMessage().getText();
                         SendMessage usernameLogin = new SendMessage();
