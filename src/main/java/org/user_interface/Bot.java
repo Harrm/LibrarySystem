@@ -1,8 +1,8 @@
-package com.librarysystem.ui;
+package org.user_interface;
 
-import com.librarysystem.commands.Command;
-import com.librarysystem.commands.LoginCommand;
-import com.librarysystem.commands.StartCommand;
+import org.commands.Command;
+import org.commands.LoginCommand;
+import org.commands.StartCommand;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.api.objects.User;

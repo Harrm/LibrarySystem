@@ -1,6 +1,6 @@
-package com.librarysystem;
+package org;
 
-import com.librarysystem.ui.Bot;
+import org.user_interface.Bot;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
